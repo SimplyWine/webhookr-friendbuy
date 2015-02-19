@@ -65,7 +65,7 @@ friendbuy:
   POST	/webhookr/events/friendbuy/19xl64emxvn
 ```
 
-## Mailparser.io Events & Payload
+## Friendbuy Events & Payload
 
 ### Events
 
@@ -73,7 +73,7 @@ All webhook events are supported.
 
 <table>
   <tr>
-    <th>Mailparser.io Event</th>
+    <th>Friendbuy Event</th>
     <th>Event Handler</th>
   </tr>
   <tr>
@@ -92,9 +92,9 @@ for ease of access.
 
 ```
 
-### <a name="supported_services"></a>Supported Service - Mailparser.io
+### <a name="supported_services"></a>Supported Service - Friendbuy
 
-* [http://apidocs.friendbuy.com/webhooks/](Mailparser.io)
+* [http://apidocs.friendbuy.com/webhooks/](Friendbuy)
 
 ## <a name="works_with"></a>Works with:
 
