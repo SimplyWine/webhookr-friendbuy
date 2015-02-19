@@ -1,18 +1,18 @@
 # Webhookr::Friendbuy
-[![Dependency Status](https://gemnasium.com/zoocasa/webhookr-prontoforms.png)](https://gemnasium.com/zoocasa/webhookr-prontoforms)
+[![Dependency Status](https://gemnasium.com/zoocasa/webhookr-friendbuy.png)](https://gemnasium.com/zoocasa/webhookr-friendbuy)
 
 This gem is a plugin for [Webhookr](https://github.com/zoocasa/webhookr) that enables
-your application to accept [webhooks from Friendbuy](https://support.prontoforms.com/entries/20743117-HTTP-POST-Data-Destination).
+your application to accept [webhooks from Friendbuy](https://support.friendbuy.com/entries/20743117-HTTP-POST-Data-Destination).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'webhookr-prontoforms'
+    gem 'webhookr-friendbuy'
 
 Or install it yourself:
 
-    $ gem install webhookr-prontoforms
+    $ gem install webhookr-friendbuy
 
 ## Usage
 
@@ -20,13 +20,13 @@ Once you have the gem installed run the generator to add the code to your initia
 An initializer will be created if you do not have one.
 
 ```console
-rails g webhookr:prontoforms:init *initializer_name* -s
+rails g webhookr:friendbuy:init *initializer_name* -s
 ```
 
 Run the generator to create an example file to handle ProntoForms webhooks.
 
 ```console
-rails g webhookr:prontoforms:example_hooks
+rails g webhookr:friendbuy:example_hooks
 ```
 
 Or create a ProntoForms handler class for any event that you want to handle. For example
@@ -60,9 +60,9 @@ rake webhookr:services
 Example output:
 
 ```console
-prontoforms:
-  GET	/webhookr/events/prontoforms/19xl64emxvn
-  POST	/webhookr/events/prontoforms/19xl64emxvn
+friendbuy:
+  GET	/webhookr/events/friendbuy/19xl64emxvn
+  POST	/webhookr/events/friendbuy/19xl64emxvn
 ```
 
 ## Mailparser.io Events & Payload
@@ -94,11 +94,11 @@ for ease of access.
 
 ### <a name="supported_services"></a>Supported Service - Mailparser.io
 
-* [http://apidocs.prontoforms.com/webhooks/](Mailparser.io)
+* [http://apidocs.friendbuy.com/webhooks/](Mailparser.io)
 
 ## <a name="works_with"></a>Works with:
 
-webhookr-prontoforms works with Rails 3.1, 3.2 and 4.0, and has been tested on the following Ruby
+webhookr-friendbuy works with Rails 3.1, 3.2 and 4.0, and has been tested on the following Ruby
 implementations:
 
 * 1.9.3
@@ -114,15 +114,15 @@ result of this policy, once this gem reaches a 1.0 release, you can (and should)
 this gem using the [Pessimistic Version Constraint](http://docs.rubygems.org/read/chapter/16#page74) with
 two digits of precision. For example:
 
-    spec.add_dependency 'webhookr-prontoforms', '~> 1.0'
+    spec.add_dependency 'webhookr-friendbuy', '~> 1.0'
 
 While this gem is currently a 0.x release, suggestion is to require the exact version that works for your code:
 
-    spec.add_dependency 'webhookr-prontoforms', '0.0.1'
+    spec.add_dependency 'webhookr-friendbuy', '0.0.1'
 
 ## License
 
-webhookr-prontoforms is released under the [MIT license](http://www.opensource.org/licenses/MIT).
+webhookr-friendbuy is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 
 ## Author
 
